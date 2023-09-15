@@ -8,7 +8,7 @@ import {
 import { faInbox } from "@fortawesome/free-solid-svg-icons"
 
 export default function Sidebar({ show }: { show: boolean }) {
-	//  status of expanding the sidebar
+	// TODO: fix the aside height
 	return (
 		<aside
 			className={`shadow-lg h-full w-fit sticky inset-0 p-4 ${
@@ -16,7 +16,7 @@ export default function Sidebar({ show }: { show: boolean }) {
 			} pr-3 pl-0 bg-white`}
 		>
 			<nav className="w-full flex flex-col h-[calc(100%-5rem)]">
-				<ul className="w-full h-fit mt-4 top-[70px] sticky inset-0">
+				<ul className="w-full h-fit mt-4 top-[70px] inset-0">
 					<NavbarLink
 						show={show}
 						icon={faLightbulb}
@@ -36,7 +36,7 @@ export default function Sidebar({ show }: { show: boolean }) {
 						icon={faEdit}
 						to={"/edit-labels"}
 					>
-						{!show && "edit-labels"}
+						{!show && "edit labels"}
 					</NavbarLink>
 					<NavbarLink show={show} icon={faInbox} to={"/archive"}>
 						{!show && "archive"}
@@ -46,7 +46,7 @@ export default function Sidebar({ show }: { show: boolean }) {
 						icon={faTrashCan}
 						to={"/trash"}
 					>
-						{!show && "reminders"}
+						{!show && "trash"}
 					</NavbarLink>
 				</ul>
 			</nav>

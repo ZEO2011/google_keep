@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom"
 import Sidebar from "./Sidebar/Sidebar"
-import Header from "./Header/Header"
+import Header from "./Header"
 import { useState } from "react"
 
 export function MainLayouts() {
-	const [show, setShow] = useState(true)
+	const [show, setShow] = useState(false)
 	return (
 		<>
 			<Header show={show} setShow={setShow} />

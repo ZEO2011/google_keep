@@ -19,7 +19,7 @@ export default function NavbarLink({
 	...restProps
 }: navlinkProps) {
 	const liClasses = classNames(
-		`navlink flex text-[1.6rem] cursor-pointer p-4 px-5 rounded-full rounded-l-none transition hover:bg-gray-200 bg-opacity-125 w-fit`,
+		`navlink flex text-[1.6rem] cursor-pointer p-4 px-5 rounded-full rounded-l-none transition hover:bg-gray-200 bg-opacity-125 w-fit transition`,
 		restProps.className,
 	)
 	return (

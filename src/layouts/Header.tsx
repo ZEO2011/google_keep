@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Dispatch, SetStateAction } from "react"
-import Btn from "./components/Btn"
+import Btn from "../components/Btn"
 
 type HeaderProps = {
 	show?: boolean
@@ -29,7 +29,7 @@ export default function Header({ setShow }: HeaderProps) {
 						data="/imgs/logo.svg"
 						className="w-16"
 					></object>
-					<h1 className="lg:block hidden">google keep</h1>
+					<h1 className="lg:block hidden">keep</h1>
 				</div>
 			</div>
 			<div className="relative w-[52rem] h-full xl:block hidden">
